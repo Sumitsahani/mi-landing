@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: medium;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    height: 2rem;
+    margin-right: 2rem;
+}
+
+.left a,
+.right a {
+    margin-right: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.left a:last-child,
+.right a:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left,
+    .right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left a,
+    .right a {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .left a:last-child,
+    .right a:last-child {
+        margin-bottom: 0;
+    }
+
+    .left img {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 0.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .left img {
+        height: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    .left a,
+    .right a {
+        font-size: small;
+    }
+}
+
+/* ----------------------------------------------------------------------main------------------------------------------- */
+
+main {
+    width: 1200px;
+    align-items: center;
+    margin: auto;
+}
+
+.card {
+    width: 13rem;
+    height: 11rem;
+    padding: 1rem;
+    margin: 0.8rem;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+}
+
+.top-left {
+    text-align: left;
+}
+
+.card h1 {
+    font-size: large;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    font-size: small;
+    color: #ff6900;
+    margin-bottom: 1rem;
+    width: 3.5rem;
+    border: 1px solid #e74c3c;
+    border-radius: 0.2rem;
+    text-align: center;
+    background-color: #ffa566;
+}
+
+.card .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.card .price p {
+    margin: 0.2rem 0;
+    font-size: small;
+}
+
+.card .price p:first-child {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.card .price p:last-child {
+    text-decoration: line-through;
+    color: #7f8c8d;
+}
+
+.card img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+
+
+/* ------------------------------------------------------------banner------------------------------------------ */
+
+.bnner{
+    width: 1040px;
+    display: block;
+    margin: auto;
+}
+
+
+
